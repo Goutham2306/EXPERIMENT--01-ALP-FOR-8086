@@ -1,4 +1,4 @@
-![Screenshot 2025-03-07 133134](https://github.com/user-attachments/assets/d14a8252-b9f4-4187-9da0-fe4c083c8973)# EXPERIMENT--01-ALP-FOR-8086
+## EXPERIMENT--01-ALP-FOR-8086
 ## Name :Goutham.K
 ## Roll no :212223110019
 ## Date of experiment :10/03/2025
