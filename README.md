@@ -71,7 +71,53 @@ HLT
 ## Output  
 ![Screenshot 2025-03-07 133656](https://github.com/user-attachments/assets/0d719a15-29f3-4a05-9a17-3f2db30cb33b)
 
+## Programs For Logical Operation
+## AND Operation of 8 bit ALP
+```
+org 100h
 
+MOV AX,125Bh
+MOV BX,6F67h
+AND AX,BX
+MOV [6000h],CX
+
+```
+## Output:
+![image](https://github.com/user-attachments/assets/63c09a5d-ba61-4595-85de-88f99e6572cd)
+
+## OR Operation of 8 bit ALP
+```
+org 100h
+
+MOV AX,[5000h]
+MOV BX,[5002h]
+OR AX,BX  
+MOV [6010h],AX
+
+```
+## Output:
+![image](https://github.com/user-attachments/assets/46525010-b313-403f-8e50-56f15aa70052)
+
+## NOT Operation of 8 bit ALP
+```
+org 100h
+MOV BX,4444h
+NOT BX
+MOV [6020h],AX
+```
+## Output:
+![image](https://github.com/user-attachments/assets/e4ba9493-303d-4a14-978f-b7f126ecff79)
+
+## XOR Operation of 8 bit ALP
+```
+org 100h          
+MOV AX,702H
+MOV BL,10H
+XOR [6030h],AL
+HLT
+```
+## Output
+![image](https://github.com/user-attachments/assets/f3cd500a-f023-4988-a94d-339763a6f15d)
 
 ## Result :
 The program has been executed successfully.
