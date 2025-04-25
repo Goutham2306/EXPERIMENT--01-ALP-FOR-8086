@@ -97,11 +97,6 @@ MOV AL, 5Ah
 NOT AL       
 MOV BH, AL
 ```
-## Output
-![Screenshot 2025-03-11 110729](https://github.com/user-attachments/assets/36ca76d7-87e2-4441-8be4-9eaa58a2c13f)
-
-## Output:
-![image](https://github.com/user-attachments/assets/46525010-b313-403f-8e50-56f15aa70052)
 
 ## NOT Operation of 8 bit ALP
 ```
@@ -110,8 +105,6 @@ MOV BX,4444h
 NOT BX
 MOV [6020h],AX
 ```
-## Output:
-![image](https://github.com/user-attachments/assets/e4ba9493-303d-4a14-978f-b7f126ecff79)
 
 ## XOR Operation of 8 bit ALP
 ```
