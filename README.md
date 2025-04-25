@@ -98,22 +98,6 @@ NOT AL
 MOV BH, AL
 ```
 
-## NOT Operation of 8 bit ALP
-```
-org 100h
-MOV BX,4444h
-NOT BX
-MOV [6020h],AX
-```
-
-## XOR Operation of 8 bit ALP
-```
-org 100h          
-MOV AX,702H
-MOV BL,10H
-XOR [6030h],AL
-HLT
-```
 ## Output
 ![image](https://github.com/user-attachments/assets/f3cd500a-f023-4988-a94d-339763a6f15d)
 
