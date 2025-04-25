@@ -99,7 +99,7 @@ MOV BH, AL
 ```
 
 ## Output
-![image](https://github.com/user-attachments/assets/f3cd500a-f023-4988-a94d-339763a6f15d)
+![Uploading image.png…]()
 
 ## Result :
 The program has been executed successfully.
