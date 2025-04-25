@@ -72,29 +72,34 @@ HLT
 ![Screenshot 2025-03-07 133656](https://github.com/user-attachments/assets/0d719a15-29f3-4a05-9a17-3f2db30cb33b)
 
 ## Programs For Logical Operation
-## AND Operation of 8 bit ALP
+## AND operation
 ```
-org 100h
-
-MOV AX,125Bh
-MOV BX,6F67h
-AND AX,BX
-MOV [6000h],CX
-
+MOV AL, 5Ah  
+MOV BL, 3Ch  
+AND AL, BL   
+MOV CL, AL 
 ```
-## Output:
-![image](https://github.com/user-attachments/assets/63c09a5d-ba61-4595-85de-88f99e6572cd)
-
-## OR Operation of 8 bit ALP
+## OR operation 
 ```
-org 100h
-
-MOV AX,[5000h]
-MOV BX,[5002h]
-OR AX,BX  
-MOV [6010h],AX
-
+MOV AL, 5Ah  
+OR AL, BL    
+MOV DL, AL
 ```
+## XOR operation 
+```
+MOV AL, 5Ah  
+XOR AL, BL   
+MOV DH, AL
+```
+## NOT operation 
+```
+MOV AL, 5Ah  
+NOT AL       
+MOV BH, AL
+```
+## Output
+![Screenshot 2025-03-11 110729](https://github.com/user-attachments/assets/36ca76d7-87e2-4441-8be4-9eaa58a2c13f)
+
 ## Output:
 ![image](https://github.com/user-attachments/assets/46525010-b313-403f-8e50-56f15aa70052)
 
