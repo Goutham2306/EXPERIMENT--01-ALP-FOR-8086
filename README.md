@@ -72,34 +72,151 @@ HLT
 ![Screenshot 2025-03-07 133656](https://github.com/user-attachments/assets/0d719a15-29f3-4a05-9a17-3f2db30cb33b)
 
 ## Programs For Logical Operation
-## AND operation
-```
-MOV AL, 5Ah  
-MOV BL, 3Ch  
-AND AL, BL   
-MOV CL, AL 
-```
-## OR operation 
-```
-MOV AL, 5Ah  
-OR AL, BL    
-MOV DL, AL
-```
-## XOR operation 
-```
-MOV AL, 5Ah  
-XOR AL, BL   
-MOV DH, AL
-```
-## NOT operation 
-```
-MOV AL, 5Ah  
-NOT AL       
-MOV BH, AL
+## Programs for arithmetic  operations
+
+## Addition  of 8 bit ALP 
+
 ```
 
+org 100h
+
+mov ax,0abcdh
+mov bx,2347h
+add ax,bx
+
+ret
+```
+
+
+
+
+
+
+## Output 
+![add](https://github.com/user-attachments/assets/aee9d94a-768e-41d6-a3ae-5f93914bcbef)
+
+ 
+## Subtraction   of 8 bit numbers  ALP 
+
+```
+org 100h
+
+mov ax,[2345h]
+mov bx,[1563h]
+sub ax,bx
+
+ret
+```
+
+
+
+
+ 
+## Output  
+![sub](https://github.com/user-attachments/assets/234cb4bf-fe7c-4383-9e0f-b2c39af0a822)
+
+## Multiplication alp 
+ 
+```
+org 100h  
+
+mov cx,2345h
+mov bx,1563h
+mov ax,bx 
+mov dx,cx 
+
+mul dx   
+
+ret
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ## Output  
+![multi](https://github.com/user-attachments/assets/1e690ebb-5df7-4c35-9220-108ad7f53e86)
+
+
+## Division alp 
+```
+org 100h  
+
+mov bx,5005h
+mov ax,[bx]
+mov cx,05h
+div cx 
+
+ret
+```
+## Output  
+![div](https://github.com/user-attachments/assets/c3b7ee06-5455-46f1-8f91-1da5e2c6f263)
+
+## Programs for logical  operations: 
+
+## AND:
+```
+org 100h
+
+mov ax,1234h 
+mov bx,3456h
+AND ax,bx
+
+ret
+```
+## Output 
+![and](https://github.com/user-attachments/assets/273dc49b-a45f-4141-b34f-0547d2b7d400)
+
+
+## OR :
+```
+org 100h
+
+mov ax,1234h 
+mov bx,3456h
+or ax,bx
+
+ret
+```
+## Output 
+![or](https://github.com/user-attachments/assets/7a97c236-fdbb-4477-bd13-9b8d3725a8ac)
+
+
+## NOT :
+```
+org 100h
+
+mov ax,1234h 
+NOT ax,bx
+
+ret
+```
 ## Output
-![image](https://github.com/user-attachments/assets/3bc4e3b7-ea29-46b1-bdf8-0be0a2f9b6a3)
+![not](https://github.com/user-attachments/assets/0d4f0378-a056-40ff-8f46-3d1850d75231)
+
+
+## XOR :
+```
+org 100h
+
+mov ax,1234h 
+mov bx,3456h
+XOR ax,bx
+
+ret
+```
+## Output 
+![xor](https://github.com/user-attachments/assets/9425d74c-33ab-4021-831d-a978dae434ce)
 
 
 ## Result :
